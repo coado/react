@@ -174,8 +174,7 @@ export type TouchedViewDataAtPoint = $ReadOnly<{
     height: number,
   }>,
   closestPublicInstance?: PublicInstance,
-  ...InspectorData,
-}>;
+} | InspectorData>;
 
 export type RenderRootOptions = {
   onUncaughtError?: (
